@@ -22,8 +22,7 @@ cmake_files = cmake/ClipMode.cmake cmake/FindFLAC.cmake \
 	cmake/FindSpeex.cmake cmake/sqlite/FindSQLite3.cmake \
 	cmake/SndFileChecks.cmake cmake/TestInline.cmake \
 	cmake/TestLargeFiles.cmake cmake/TestInline.c.in \
-	cmake/FindOpus.cmake cmake/SndFileConfig.cmake.in \
-	cmake/CheckCPUArch.cmake cmake/CheckCPUArch.c.in
+	cmake/FindOpus.cmake cmake/SndFileConfig.cmake.in
 
 pkgconfig_DATA = sndfile.pc
 
