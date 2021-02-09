@@ -1607,7 +1607,7 @@ psf_f2s_array (const float *src, short *dest, int count, int normalize)
 
 	normfact = normalize ? (1.0 * 0x7FFF) : 1.0 ;
 	while (--count >= 0)
-		dest [count] = psf_lrintf (src [count] * normfact) ;
+		dest [count] = lrintf (src [count] * normfact) ;
 
 	return ;
 } /* psf_f2s_array */
@@ -1629,7 +1629,7 @@ psf_f2s_clip_array (const float *src, short *dest, int count, int normalize)
 			continue ;
 			} ;
 
-		dest [count] = psf_lrintf (scaled_value) ;
+		dest [count] = lrintf (scaled_value) ;
 		} ;
 
 	return ;
@@ -1641,7 +1641,7 @@ psf_d2s_array (const double *src, short *dest, int count, int normalize)
 
 	normfact = normalize ? (1.0 * 0x7FFF) : 1.0 ;
 	while (--count >= 0)
-		dest [count] = psf_lrint (src [count] * normfact) ;
+		dest [count] = lrint (src [count] * normfact) ;
 
 	return ;
 } /* psf_f2s_array */
@@ -1663,7 +1663,7 @@ psf_d2s_clip_array (const double *src, short *dest, int count, int normalize)
 			continue ;
 			} ;
 
-		dest [count] = psf_lrint (scaled_value) ;
+		dest [count] = lrint (scaled_value) ;
 		} ;
 
 	return ;
@@ -1676,7 +1676,7 @@ psf_f2i_array (const float *src, int *dest, int count, int normalize)
 
 	normfact = normalize ? (1.0 * 0x7FFFFFFF) : 1.0 ;
 	while (--count >= 0)
-		dest [count] = psf_lrintf (src [count] * normfact) ;
+		dest [count] = lrintf (src [count] * normfact) ;
 
 	return ;
 } /* psf_f2i_array */
@@ -1698,7 +1698,7 @@ psf_f2i_clip_array (const float *src, int *dest, int count, int normalize)
 			continue ;
 			} ;
 
-		dest [count] = psf_lrintf (scaled_value) ;
+		dest [count] = lrintf (scaled_value) ;
 		} ;
 
 	return ;
@@ -1710,7 +1710,7 @@ psf_d2i_array (const double *src, int *dest, int count, int normalize)
 
 	normfact = normalize ? (1.0 * 0x7FFFFFFF) : 1.0 ;
 	while (--count >= 0)
-		dest [count] = psf_lrint (src [count] * normfact) ;
+		dest [count] = lrint (src [count] * normfact) ;
 
 	return ;
 } /* psf_f2i_array */
@@ -1732,7 +1732,7 @@ psf_d2i_clip_array (const double *src, int *dest, int count, int normalize)
 			continue ;
 			} ;
 
-		dest [count] = psf_lrint (scaled_value) ;
+		dest [count] = lrint (scaled_value) ;
 		} ;
 
 	return ;
